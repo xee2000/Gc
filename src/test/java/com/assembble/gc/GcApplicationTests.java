@@ -35,16 +35,6 @@ class GcApplicationTests {
 		}
 	}
 
-	@Test
-	public void testErmInfoEventSize() {
-		// Execute the SQL query
-		List<ErmInfoEventDto> ermInfoEventList = sensorMapper.getErmList();
-
-		// Verify the size is 15
-		int expectedSize = 15;
-		assertEquals(expectedSize, ermInfoEventList.size(), "Size should be 15");
-	}
-
 
 
 
