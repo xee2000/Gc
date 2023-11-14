@@ -60,6 +60,7 @@ public class AccountController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         log.error("user UNAUTHORIZED!!");
+        log.info("젠킨스 확인");
         return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
     }
 
