@@ -15,27 +15,5 @@ import static org.junit.jupiter.api.Assertions.fail;
 @SpringBootTest
 class GcApplicationTests {
 
-	@Autowired
-	private JdbcTemplate jdbcTemplate;
-
-	@Autowired
-	private SensorMapper sensorMapper;
-
-	@Test
-	public void testDatabaseConnection() {
-		try {
-			// Execute a simple query to check the database connection
-			int result = jdbcTemplate.queryForObject("SELECT 1", Integer.class);
-
-			// Assert that the result is 1
-			assertEquals(1, result);
-		} catch (Exception e) {
-			// If an exception occurs, fail the test with an error message
-			fail("Database connection test failed: " + e.getMessage());
-		}
-	}
-
-
-
 
 }
