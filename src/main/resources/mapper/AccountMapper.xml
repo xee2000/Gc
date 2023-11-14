@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.assembble.gc.mapper.AccountMapper">
+
+    <select id="Login" resultType="map" parameterType="map">
+        SELECT * FROM user where id = #{id} and pwd = #{pwd}
+    </select>
+
+    <select id="findByMemId" resultType="map" parameterType="map">
+        SELECT * FROM user where id = #{id}
+    </select>
+
+    <update id="createUser" parameterType="map">
+        INSERT INTO user (id, pwd) VALUES(#{id},#{pwd})
+    </update>
+
+</mapper>
+
