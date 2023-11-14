@@ -53,6 +53,8 @@ public class AccountController {
                 cookie.setPath("/");
                 res.addCookie(cookie);
             log.info("clear : " + token);
+                log.info("clear : " + token);
+
                 return new ResponseEntity<>(dto, HttpStatus.OK);
             }
         }else{
