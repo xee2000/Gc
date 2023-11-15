@@ -18,6 +18,8 @@ permissions:
 
 env:
   S3_BUCKET_NAME: gc-cicd
+  CODE_DEPLOY_APP_NAME: gc-cicd
+  CODE_DEPLOY_GROUP_NAME: gc-instance  
 
 jobs:
   build:
