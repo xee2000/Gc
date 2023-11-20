@@ -49,8 +49,10 @@ public class AccountController {
                 String idToken = dto.get("id");
                 String token = jwtService.getToken("id", idToken);
                 Cookie cookie = new Cookie("token", token);
+                cookie.setHttpOnly(true);
                 cookie.setPath("/");
                 res.addCookie(cookie);
+            log.info("clear : " + token);
                 return new ResponseEntity<>(dto, HttpStatus.OK);
             }
         }else{
@@ -74,6 +76,7 @@ public class AccountController {
     @PostMapping("/account/create")
     public ResponseEntity create(@RequestBody Map<String, String> params) {
         String id = params.get("id");
+        String pwd = params.get("pwd");
         Map<String, String> dto = new HashMap<>();
         dto.put("id",id);
         Map<String,String> Dto = accountMapper.findByMemId(dto);
