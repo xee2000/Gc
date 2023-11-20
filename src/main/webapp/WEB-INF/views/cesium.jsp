@@ -240,10 +240,7 @@ function updateNameOverlay(pickedFeature, position) {
 function createPickedFeatureDescription(pickedFeature) {
 
   const description =
-    `${
-      '<table class="cesium-infoBox-defaultTable"><tbody>' +
-      "<tr><th>아이디</th><td>"
-    }${pickedFeature.getProperty("elementId")}</td></tr>` +
+    `${pickedFeature.getProperty("elementId")}</td></tr>` +
     `<tr><th>이름</th><td>${pickedFeature.getProperty(
       "name"
     )}</td></tr>` +
