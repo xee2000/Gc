@@ -1,9 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false" %>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-    <c:set var="sensor" value="${map.map}" />
-                     <c:out value="device_num: ${sensor.device_number}" /><br/>
-                     <c:out value="measure_time: ${sensor.alarm}" /><br/>
+           <c:set var="sensor" value="${map.map}" />
+           <c:set var="now" value="<%=new java.util.Date()%>" />
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -15,7 +14,6 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="/cesium.js"></script>
  <link rel="stylesheet" href="/css/cesium.css">
   <script>
     let eventCount=0;
@@ -63,6 +61,7 @@
           </nav>
         </div>
   <div  class="allDiv">
+
         <!-- 실시간 탐지 구역 -->
         <div class="realTimeFind">
           <form name="Search" action="">
@@ -92,7 +91,7 @@
                   }
                 }
                 function findPlace(lati, longi){
-                 alert(lati + " 위도 " + longi + "경도")
+
                   viewer.camera.flyTo({
                         //위도, 경도, 높이, 방향 설정하기, 사용자에게 위치 (위도, 경도 값 받아올 수 있도록 할 수 있음)
                           destination: Cesium.Cartesian3.fromDegrees(lati, longi, 2000),
@@ -106,6 +105,9 @@
           </script>
           </ol>
          </div>
+
+
+
         </div>
    <div class="middleDiv">
         <!-- 세슘 시작 구간 -->
@@ -126,10 +128,10 @@
 
   //값 상태에 따라 건물 색깔 변경하기
   if(true){
-
+    alert("디바이스 번호 : ${sensor.device_number} 측정시간 : ${sensor.measure_time} 현재시간 : ${now}");
     let errString = [];
     testData = [
-                      {latitude : 36.37528, longitude : 127.3894, condition :"bad", where : "전기과부하"},
+                      {latitude : 36.37528, longitude : 127.3894, condition :"bad", where : "전기과부하", device_number :"${sensor.device_number}", measure_time : "${sensor.measure_time}" },
                       {latitude : 36.38473, longitude : 127.39887,  condition :"good",where : "습도 이상"},
                       {latitude : 36.37618, longitude : 127.39736,  condition : "middle", where : "전기과부하"},
                       {latitude : 36.37618, longitude : 127.39736, condition : "bad", where : "전기과부하"},
@@ -157,7 +159,6 @@
 
      buildingsTileset.style = new Cesium.Cesium3DTileStyle(
       {
-
      color: {
      conditions: [
      ["${elementId}=== 469034113" ,"color('red')"],[true, "color('#7CFC00')"]
@@ -228,16 +229,15 @@ const clickHandler = viewer.screenSpaceEventHandler.getInputAction(
 // Update the 'nameOverlay' for the given picked feature,
 // at the given (screen) position.
 function updateNameOverlay(pickedFeature, position) {
+
   if (!Cesium.defined(pickedFeature)) {
     nameOverlay.style.display = "none";
     return;
   }
   // A feature was picked, so show its overlay content
   nameOverlay.style.display = "block";
-  nameOverlay.style.bottom = `${
-    viewer.canvas.clientHeight - position.y
-  }px`;
-  nameOverlay.style.left = `${position.x+20}px`;
+  nameOverlay.style.bottom = '${ viewer.canvas.clientHeight  - position.y}px';
+  nameOverlay.style.left = '${position.x+200}px';
 
   const name = pickedFeature.getProperty("name");
   nameOverlay.textContent = name;
@@ -246,24 +246,22 @@ function updateNameOverlay(pickedFeature, position) {
 // Create the HTML that will be put into the info box that shows
 // information about the currently selected feature
 function createPickedFeatureDescription(pickedFeature) {
-
   const description =
-    `${pickedFeature.getProperty("elementId")}</td></tr>` +
-    `<tr><th>이름</th><td>${pickedFeature.getProperty(
-      "name"
-    )}</td></tr>` +
-    `<tr><th>위도</th><td>${pickedFeature.getProperty(
-      "cesium#latitude"
-    )}</td></tr>` +
-    `<tr><th>경도</th><td>${pickedFeature.getProperty(
-      "cesium#longitude"
-    )}</td></tr>` +
-    `</tbody></table>`;
+   '<table class="cesium-infoBox-defaultTable"><tbody>' +
+         "<tr><th>아이디</th><td>" +
+         pickedFeature.getProperty("elementId") +
+         "</td></tr>" +
+         "<tr><th>위도</th><td>" +
+         pickedFeature.getProperty("cesium#latitude") +
+         "</td></tr>" +
+         "<tr><th>경도</th><td>" +
+         pickedFeature.getProperty("cesium#longitude") +
+         "</td></tr>" +
+         "</tbody></table>";
   return description;
 }
 
 // If silhouettes are supported, silhouette features in blue on mouse over and silhouette green on mouse click.
-// If silhouettes are not supported, change the feature color to yellow on mouse over and green on mouse click.
 if (
   Cesium.PostProcessStageLibrary.isSilhouetteSupported(viewer.scene)
 ) {
@@ -430,3 +428,5 @@ if (
 <div id="chartHolder" style="width:800px; height:450px;"><div>
 </body>
 </html>
+
+
