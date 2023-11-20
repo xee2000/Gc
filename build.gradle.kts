@@ -30,7 +30,10 @@ dependencies {
 	implementation("io.jsonwebtoken:jjwt-api:0.11.5")
 	implementation("io.jsonwebtoken:jjwt-impl:0.11.5")
 	implementation("io.jsonwebtoken:jjwt-jackson:0.11.5")
+	implementation("org.apache.tomcat.embed:tomcat-embed-jasper")
 	implementation("org.glassfish.jaxb:jaxb-runtime:2.3.2")
+	implementation("javax.servlet:jstl:1.2")
+
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")

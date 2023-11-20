@@ -11,8 +11,11 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -20,7 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@RestController
+@Controller
 @RequestMapping("/sensor")
 @EnableCaching
 public class SensorController {
@@ -30,6 +33,11 @@ public class SensorController {
 
         @Autowired
         private JwtService jwtService;
+
+    @GetMapping("/homepage")
+    public String home(Model model){
+        return "home";
+    }
 
     @GetMapping("/list")
     @Cacheable

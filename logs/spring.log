@@ -1,235 +1,838 @@
-2023-11-14 13:50:19,114 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 19196 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
-2023-11-14 13:50:19,118 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
-2023-11-14 13:50:19,161 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
-2023-11-14 13:50:19,162 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-11-14 13:50:19,162 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-11-14 13:50:20,720 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2023-11-14 13:50:20,729 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2023-11-14 13:50:20,730 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-11-14 13:50:20,818 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2023-11-14 13:50:20,818 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1656 ms
-2023-11-14 13:50:21,357 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
+2023-11-16 11:36:19,578 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 20136 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 11:36:19,588 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 11:36:19,643 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 11:36:19,643 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 11:36:19,644 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 11:36:21,707 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 11:36:21,720 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 11:36:21,720 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 11:36:21,828 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 11:36:21,828 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 2184 ms
+2023-11-16 11:36:22,646 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-Using generated security password: 4f73b042-bc84-4057-98a2-8cb468eab647
+Using generated security password: 6d4d602f-e168-4c8b-ae17-5f5c1a93800c
 
-2023-11-14 13:50:21,418 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
-2023-11-14 13:50:21,419 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
-2023-11-14 13:50:21,419 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
-2023-11-14 13:50:21,420 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
-2023-11-14 13:50:21,452 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41ce31ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@52692a8a, org.springframework.security.web.header.HeaderWriterFilter@2fb81dec, org.springframework.security.web.authentication.logout.LogoutFilter@69ea0ca5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a4a1455, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4257a271, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4973c82e, org.springframework.security.web.session.SessionManagementFilter@34406869, org.springframework.security.web.access.ExceptionTranslationFilter@66950ab4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7550fc64]
-2023-11-14 13:50:21,551 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2023-11-14 13:50:21,831 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
-2023-11-14 13:50:21,874 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2023-11-14 13:50:21,888 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.189 seconds (JVM running for 3.601)
-2023-11-14 13:50:28,785 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-11-14 13:50:28,787 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
-2023-11-14 13:50:28,788 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
-2023-11-14 13:50:28,865 [http-nio-8080-exec-1]  INFO [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
-2023-11-14 13:50:28,935 [http-nio-8080-exec-1]  INFO [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
-2023-11-14 13:50:29,657 [http-nio-8080-exec-1]  INFO [com.assembble.gc.controller.AccountController:55] cleareyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJleHAiOjE2OTk5Mzc3Mjl9.1MRSY8j2MAromrRM3Qeo7XBrNtkeJ_-O8Q_tP6SwIC0
-2023-11-14 17:03:32,972 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 25608 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
-2023-11-14 17:03:32,976 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
-2023-11-14 17:03:33,030 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
-2023-11-14 17:03:33,030 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-11-14 17:03:33,031 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-11-14 17:03:34,856 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2023-11-14 17:03:34,871 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2023-11-14 17:03:34,872 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-11-14 17:03:34,975 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2023-11-14 17:03:34,975 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1943 ms
-2023-11-14 17:03:35,837 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
+2023-11-16 11:36:22,735 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 11:36:22,735 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 11:36:22,736 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 11:36:22,737 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 11:36:22,778 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c7c8090, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ba3f0e8, org.springframework.security.web.header.HeaderWriterFilter@30492310, org.springframework.security.web.authentication.logout.LogoutFilter@3b79479b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5026a8b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@519987e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7305b0c1, org.springframework.security.web.session.SessionManagementFilter@4722530a, org.springframework.security.web.access.ExceptionTranslationFilter@6930088c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10f7ad32]
+2023-11-16 11:36:22,905 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 11:36:23,189 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 11:36:23,218 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 11:36:23,228 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 4.251 seconds (JVM running for 4.799)
+2023-11-16 11:37:19,993 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 11:37:19,994 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 11:37:19,995 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 11:37:20,072 [http-nio-8080-exec-1]  WARN [org.springframework.web.servlet.resource.ResourceHttpRequestHandler:703] Path with "WEB-INF" or "META-INF": [sensor/.jsphome/WEB-INF/views]
+2023-11-16 11:39:12,042 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 30484 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 11:39:12,045 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 11:39:12,091 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 11:39:12,092 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 11:39:12,092 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 11:39:13,905 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 11:39:13,918 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 11:39:13,918 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 11:39:13,998 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 11:39:13,999 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1905 ms
+2023-11-16 11:39:14,793 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-Using generated security password: 060b7fd4-8e07-4819-9b56-64cb8f565c72
+Using generated security password: 5c3167d1-cd9a-4e83-9931-157b8d89482b
 
-2023-11-14 17:03:35,959 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
-2023-11-14 17:03:35,961 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
-2023-11-14 17:03:35,961 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
-2023-11-14 17:03:35,962 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
-2023-11-14 17:03:36,021 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@477f1cdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@aca756e, org.springframework.security.web.header.HeaderWriterFilter@d9b0ba9, org.springframework.security.web.authentication.logout.LogoutFilter@73088286, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@773ed813, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4607d600, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7636c410, org.springframework.security.web.session.SessionManagementFilter@4cfa9626, org.springframework.security.web.access.ExceptionTranslationFilter@4108fb5e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66395362]
-2023-11-14 17:03:36,197 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2023-11-14 17:03:36,464 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
-2023-11-14 17:03:36,499 [restartedMain]  WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2023-11-14 17:03:36,502 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2023-11-14 17:03:36,507 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
-2023-11-14 17:03:36,517 [restartedMain]  INFO [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+2023-11-16 11:39:14,877 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 11:39:14,878 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 11:39:14,879 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 11:39:14,879 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 11:39:14,918 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79ab814f, org.springframework.security.web.context.SecurityContextPersistenceFilter@153b5c21, org.springframework.security.web.header.HeaderWriterFilter@1120cdc8, org.springframework.security.web.authentication.logout.LogoutFilter@2d265eb1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4af4c4fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ba3f0e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a758ced, org.springframework.security.web.session.SessionManagementFilter@30492310, org.springframework.security.web.access.ExceptionTranslationFilter@1a23acf4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3dd42108]
+2023-11-16 11:39:15,051 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 11:39:15,354 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 11:39:15,403 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 11:39:15,414 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.8 seconds (JVM running for 4.244)
+2023-11-16 11:39:15,610 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 11:39:15,610 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 11:39:15,612 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 11:39:15,700 [http-nio-8080-exec-1]  WARN [org.springframework.web.servlet.resource.ResourceHttpRequestHandler:703] Path with "WEB-INF" or "META-INF": [sensor/.jsphome/WEB-INF/views]
+2023-11-16 11:39:17,472 [http-nio-8080-exec-2]  WARN [org.springframework.web.servlet.resource.ResourceHttpRequestHandler:703] Path with "WEB-INF" or "META-INF": [sensor/.jsphome/WEB-INF/views]
+2023-11-16 11:46:15,482 [http-nio-8080-exec-5]  WARN [org.springframework.web.servlet.resource.ResourceHttpRequestHandler:703] Path with "WEB-INF" or "META-INF": [sensor/.jsphome/WEB-INF/views]
+2023-11-16 11:47:14,096 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 5872 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 11:47:14,099 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 11:47:14,145 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 11:47:14,145 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 11:47:14,145 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 11:47:15,831 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 11:47:15,842 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 11:47:15,843 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 11:47:15,928 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 11:47:15,929 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1784 ms
+2023-11-16 11:47:16,585 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-11-14 17:03:36,542 [restartedMain] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+Using generated security password: 55b2d659-baa3-4113-9f00-dfce95c3504b
 
-***************************
-APPLICATION FAILED TO START
-***************************
+2023-11-16 11:47:16,641 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 11:47:16,641 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 11:47:16,642 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 11:47:16,642 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 11:47:16,676 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c453242, org.springframework.security.web.context.SecurityContextPersistenceFilter@370bc815, org.springframework.security.web.header.HeaderWriterFilter@aca756e, org.springframework.security.web.authentication.logout.LogoutFilter@1a2f70ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@651cb8b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a082e85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5eaff852, org.springframework.security.web.session.SessionManagementFilter@4baa708c, org.springframework.security.web.access.ExceptionTranslationFilter@4cfa9626, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c9a5b7c]
+2023-11-16 11:47:16,788 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 11:47:17,021 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 11:47:17,054 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 11:47:17,064 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.4 seconds (JVM running for 3.821)
+2023-11-16 11:47:18,793 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 11:47:18,794 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 11:47:18,796 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 11:47:18,847 [http-nio-8080-exec-1]  WARN [org.springframework.web.servlet.resource.ResourceHttpRequestHandler:703] Path with "WEB-INF" or "META-INF": [sensor/.jsphome.jsp/WEB-INF/views]
+2023-11-16 11:47:21,045 [http-nio-8080-exec-2]  WARN [org.springframework.web.servlet.resource.ResourceHttpRequestHandler:703] Path with "WEB-INF" or "META-INF": [sensor/.jsphome.jsp/WEB-INF/views]
+2023-11-16 12:31:39,529 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 17548 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:31:39,533 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:31:39,582 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:31:39,582 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:31:39,582 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:31:41,289 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:31:41,302 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:31:41,303 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:31:41,400 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:31:41,401 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1818 ms
+2023-11-16 12:31:42,155 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-Description:
+Using generated security password: 816122bc-d0a2-4a55-bb07-2337ecfdccd5
 
-Web server failed to start. Port 8080 was already in use.
+2023-11-16 12:31:42,217 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:31:42,218 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:31:42,219 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:31:42,219 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:31:42,256 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d9cd367, org.springframework.security.web.context.SecurityContextPersistenceFilter@7471fd0b, org.springframework.security.web.header.HeaderWriterFilter@5673439e, org.springframework.security.web.authentication.logout.LogoutFilter@7d99b386, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d67be62, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4bf86b5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cd0d7ee, org.springframework.security.web.session.SessionManagementFilter@651cb8b1, org.springframework.security.web.access.ExceptionTranslationFilter@773ed813, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@597b5fae]
+2023-11-16 12:31:42,375 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:31:42,641 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:31:42,677 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:31:42,687 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.638 seconds (JVM running for 4.123)
+2023-11-16 12:31:43,994 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:31:43,995 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:31:43,997 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 12:31:44,043 [http-nio-8080-exec-1]  WARN [org.springframework.web.servlet.resource.ResourceHttpRequestHandler:703] Path with "WEB-INF" or "META-INF": [sensor/.jsphome/WEB-INF/views]
+2023-11-16 12:35:41,905 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 19200 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:35:41,908 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:35:41,952 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:35:41,953 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:35:41,953 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:35:43,590 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:35:43,601 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:35:43,601 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:35:43,685 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:35:43,685 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1731 ms
+2023-11-16 12:35:44,363 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-Action:
+Using generated security password: ce01a9fb-ac5d-4444-bf8d-027d1d179075
 
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+2023-11-16 12:35:44,416 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:35:44,417 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:35:44,418 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:35:44,418 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:35:44,456 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79ab814f, org.springframework.security.web.context.SecurityContextPersistenceFilter@153b5c21, org.springframework.security.web.header.HeaderWriterFilter@1120cdc8, org.springframework.security.web.authentication.logout.LogoutFilter@2d265eb1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4af4c4fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ba3f0e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a758ced, org.springframework.security.web.session.SessionManagementFilter@30492310, org.springframework.security.web.access.ExceptionTranslationFilter@1a23acf4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3dd42108]
+2023-11-16 12:35:44,567 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:35:44,791 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:35:44,825 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:35:44,838 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.343 seconds (JVM running for 3.776)
+2023-11-16 12:35:48,763 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:35:48,763 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:35:48,764 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 12:35:48,816 [http-nio-8080-exec-1]  WARN [org.springframework.web.servlet.resource.ResourceHttpRequestHandler:703] Path with "WEB-INF" or "META-INF": [sensor/.jsphome/WEB-INF/views]
+2023-11-16 12:36:23,475 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 20248 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:36:23,478 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:36:23,523 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:36:23,524 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:36:23,524 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:36:25,175 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:36:25,187 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:36:25,187 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:36:25,280 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:36:25,280 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1756 ms
+2023-11-16 12:36:25,916 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-2023-11-14 17:04:55,188 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 22668 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
-2023-11-14 17:04:55,191 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
-2023-11-14 17:04:55,239 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
-2023-11-14 17:04:55,239 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-11-14 17:04:55,239 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-11-14 17:04:56,873 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2023-11-14 17:04:56,883 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2023-11-14 17:04:56,883 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-11-14 17:04:56,971 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2023-11-14 17:04:56,971 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1730 ms
-2023-11-14 17:04:57,621 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
+Using generated security password: e216db3e-80f9-44ee-9470-e4888ce18c7f
 
-Using generated security password: dee9b9ef-d21f-4404-98dc-ac7cc3608e46
+2023-11-16 12:36:25,980 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:36:25,981 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:36:25,981 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:36:25,981 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:36:26,022 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@581e2d04, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dd3c5c4, org.springframework.security.web.header.HeaderWriterFilter@fcb260c, org.springframework.security.web.authentication.logout.LogoutFilter@1c5028c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dbe5c54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cf01c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d9cd367, org.springframework.security.web.session.SessionManagementFilter@7daa8998, org.springframework.security.web.access.ExceptionTranslationFilter@6fed286e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e4a595]
+2023-11-16 12:36:26,147 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:36:26,450 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:36:26,491 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:36:26,501 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.434 seconds (JVM running for 3.894)
+2023-11-16 12:36:27,778 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:36:27,779 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:36:27,780 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 12:36:27,828 [http-nio-8080-exec-1] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-11-16 12:38:19,555 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 31312 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:38:19,558 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:38:19,600 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:38:19,601 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:38:19,601 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:38:21,355 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:38:21,367 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:38:21,367 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:38:21,447 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:38:21,448 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1846 ms
+2023-11-16 12:38:22,122 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-2023-11-14 17:04:57,690 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
-2023-11-14 17:04:57,690 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
-2023-11-14 17:04:57,691 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
-2023-11-14 17:04:57,692 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
-2023-11-14 17:04:57,730 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@477f1cdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@aca756e, org.springframework.security.web.header.HeaderWriterFilter@d9b0ba9, org.springframework.security.web.authentication.logout.LogoutFilter@73088286, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@773ed813, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4607d600, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7636c410, org.springframework.security.web.session.SessionManagementFilter@4cfa9626, org.springframework.security.web.access.ExceptionTranslationFilter@4108fb5e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66395362]
-2023-11-14 17:04:57,846 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2023-11-14 17:04:58,067 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
-2023-11-14 17:04:58,088 [restartedMain]  WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:590] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2023-11-14 17:04:58,091 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2023-11-14 17:04:58,098 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Stopping service [Tomcat]
-2023-11-14 17:04:58,109 [restartedMain]  INFO [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136] 
+Using generated security password: e9b15e1a-2186-46a5-b7a0-111e6cc1ff5c
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-11-14 17:04:58,129 [restartedMain] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] 
+2023-11-16 12:38:22,201 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:38:22,202 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:38:22,202 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:38:22,203 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:38:22,250 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@581e2d04, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dd3c5c4, org.springframework.security.web.header.HeaderWriterFilter@fcb260c, org.springframework.security.web.authentication.logout.LogoutFilter@1c5028c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dbe5c54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cf01c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d9cd367, org.springframework.security.web.session.SessionManagementFilter@7daa8998, org.springframework.security.web.access.ExceptionTranslationFilter@6fed286e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e4a595]
+2023-11-16 12:38:22,358 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:38:22,650 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:38:22,683 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:38:22,697 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.563 seconds (JVM running for 3.994)
+2023-11-16 12:38:23,677 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:38:23,678 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:38:23,679 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 12:38:23,723 [http-nio-8080-exec-1] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-11-16 12:38:26,648 [http-nio-8080-exec-3] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-11-16 12:38:53,205 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 27112 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:38:53,208 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:38:53,251 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:38:53,251 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:38:53,251 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:38:54,893 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:38:54,904 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:38:54,904 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:38:54,988 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:38:54,989 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1737 ms
+2023-11-16 12:38:55,639 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-***************************
-APPLICATION FAILED TO START
-***************************
+Using generated security password: 2784b06a-681a-4fce-bc68-205b37c276a1
 
-Description:
+2023-11-16 12:38:55,706 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:38:55,707 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:38:55,708 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:38:55,708 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:38:55,751 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@581e2d04, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dd3c5c4, org.springframework.security.web.header.HeaderWriterFilter@fcb260c, org.springframework.security.web.authentication.logout.LogoutFilter@1c5028c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dbe5c54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cf01c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d9cd367, org.springframework.security.web.session.SessionManagementFilter@7daa8998, org.springframework.security.web.access.ExceptionTranslationFilter@6fed286e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e4a595]
+2023-11-16 12:38:55,857 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:38:56,085 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:38:56,112 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:38:56,123 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.326 seconds (JVM running for 3.771)
+2023-11-16 12:38:57,347 [http-nio-8080-exec-2]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:38:57,347 [http-nio-8080-exec-2]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:38:57,349 [http-nio-8080-exec-2]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 12:38:57,398 [http-nio-8080-exec-2] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [home]: would dispatch back to the current handler URL [/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [home]: would dispatch back to the current handler URL [/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-11-16 12:45:28,458 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 26476 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:45:28,462 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:45:28,511 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:45:28,512 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:45:28,512 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:45:30,212 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:45:30,223 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:45:30,223 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:45:30,307 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:45:30,308 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1795 ms
+2023-11-16 12:45:30,952 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-Web server failed to start. Port 8080 was already in use.
+Using generated security password: 5eac1d9e-fded-49e3-b398-804db343ba74
 
-Action:
+2023-11-16 12:45:31,009 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:45:31,010 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:45:31,010 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:45:31,010 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:45:31,052 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cd0d7ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@5dbe5c54, org.springframework.security.web.header.HeaderWriterFilter@505baf66, org.springframework.security.web.authentication.logout.LogoutFilter@31d04f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e99adef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4126737e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23254218, org.springframework.security.web.session.SessionManagementFilter@1dd3c5c4, org.springframework.security.web.access.ExceptionTranslationFilter@fcb260c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75de1dea]
+2023-11-16 12:45:31,180 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:45:31,471 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:45:31,501 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:45:31,511 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.51 seconds (JVM running for 3.963)
+2023-11-16 12:45:32,237 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:45:32,238 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:45:32,239 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 12:45:51,542 [http-nio-8080-exec-3] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-11-16 12:46:58,695 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 11112 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:46:58,698 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:46:58,752 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:46:58,752 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:46:58,752 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:47:00,441 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:47:00,453 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:47:00,453 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:47:00,538 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:47:00,539 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1786 ms
+2023-11-16 12:47:01,207 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+Using generated security password: 5ac9a101-bdb2-4fd3-81fa-6d529bcc1a07
 
-2023-11-14 17:06:14,887 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 25592 (C:\Users\Ïù¥Ï†ïÌò∏\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\Ïù¥Ï†ïÌò∏\Documents\project\gc)
-2023-11-14 17:06:14,891 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
-2023-11-14 17:06:14,959 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\Ïù¥Ï†ïÌò∏\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
-2023-11-14 17:06:14,960 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-11-14 17:06:15,636 [restartedMain] ERROR [org.springframework.boot.SpringApplication:856] Application run failed
-java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
-	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193)
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:342)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:246)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:745)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:563)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at com.assembble.gc.GcApplication.main(GcApplication.java:12)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
-	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:747)
-	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:746)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:685)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:656)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
-	... 22 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: javax/servlet/Filter
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
-	... 38 common frames omitted
-Caused by: java.lang.ClassNotFoundException: javax.servlet.Filter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 42 common frames omitted
-2023-11-14 17:06:15,641 [restartedMain]  WARN [org.springframework.boot.SpringApplication:828] Unable to close ApplicationContext
-java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
-	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:747)
-	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:746)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:685)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:656)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
-	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1299)
-	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
-	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
-	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
-	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
-	at com.assembble.gc.GcApplication.main(GcApplication.java:12)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.NoClassDefFoundError: javax/servlet/Filter
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
-	... 26 common frames omitted
-Caused by: java.lang.ClassNotFoundException: javax.servlet.Filter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 30 common frames omitted
-2023-11-14 17:06:33,675 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 11292 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
-2023-11-14 17:06:33,678 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
-2023-11-14 17:06:33,726 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
-2023-11-14 17:06:33,726 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-11-14 17:06:33,726 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-11-14 17:06:35,447 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
-2023-11-14 17:06:35,457 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
-2023-11-14 17:06:35,458 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2023-11-14 17:06:35,539 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
-2023-11-14 17:06:35,539 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1812 ms
-2023-11-14 17:06:36,201 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
+2023-11-16 12:47:01,287 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:47:01,288 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:47:01,289 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:47:01,290 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:47:01,324 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d9cd367, org.springframework.security.web.context.SecurityContextPersistenceFilter@7471fd0b, org.springframework.security.web.header.HeaderWriterFilter@5673439e, org.springframework.security.web.authentication.logout.LogoutFilter@7d99b386, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d67be62, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4bf86b5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cd0d7ee, org.springframework.security.web.session.SessionManagementFilter@651cb8b1, org.springframework.security.web.access.ExceptionTranslationFilter@773ed813, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@597b5fae]
+2023-11-16 12:47:01,444 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:47:01,676 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:47:01,702 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:47:01,711 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.443 seconds (JVM running for 3.866)
+2023-11-16 12:47:04,627 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:47:04,628 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:47:04,629 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 12:47:04,678 [http-nio-8080-exec-1] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [home]: would dispatch back to the current handler URL [/sensor/home] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-11-16 12:48:16,048 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 9516 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:48:16,051 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:48:16,096 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:48:16,097 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:48:16,097 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:48:17,749 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:48:17,760 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:48:17,760 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:48:17,850 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:48:17,850 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1753 ms
+2023-11-16 12:48:18,502 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
 
-Using generated security password: a74fd1d4-2e03-4a34-8104-d01937674db6
+Using generated security password: af2642c7-2919-4f81-8ed6-c15b4f4159dc
 
-2023-11-14 17:06:36,261 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
-2023-11-14 17:06:36,261 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
-2023-11-14 17:06:36,262 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
-2023-11-14 17:06:36,262 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
-2023-11-14 17:06:36,313 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48b4323, org.springframework.security.web.context.SecurityContextPersistenceFilter@7080c35b, org.springframework.security.web.header.HeaderWriterFilter@796fc65c, org.springframework.security.web.authentication.logout.LogoutFilter@a082e85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7022a91b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@aca756e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ef5567, org.springframework.security.web.session.SessionManagementFilter@43e8b30c, org.springframework.security.web.access.ExceptionTranslationFilter@4bc058cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bae8a18]
-2023-11-14 17:06:36,452 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
-2023-11-14 17:06:36,736 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
-2023-11-14 17:06:36,782 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
-2023-11-14 17:06:36,798 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.536 seconds (JVM running for 4.123)
+2023-11-16 12:48:18,559 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:48:18,560 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:48:18,560 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:48:18,560 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:48:18,595 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75de1dea, org.springframework.security.web.context.SecurityContextPersistenceFilter@4607d600, org.springframework.security.web.header.HeaderWriterFilter@72215585, org.springframework.security.web.authentication.logout.LogoutFilter@5dd028a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7daa8998, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25fb9a92, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c453242, org.springframework.security.web.session.SessionManagementFilter@789bc50, org.springframework.security.web.access.ExceptionTranslationFilter@60f0b657, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@333c0004]
+2023-11-16 12:48:18,715 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:48:18,983 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:48:19,019 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:48:19,031 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.394 seconds (JVM running for 3.841)
+2023-11-16 12:48:19,935 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:48:19,935 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:48:19,937 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2023-11-16 12:51:17,064 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 29544 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:51:17,067 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:51:17,115 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:51:17,115 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:51:17,116 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:51:18,951 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:51:18,965 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:51:18,965 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:51:19,074 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:51:19,074 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1957 ms
+2023-11-16 12:51:19,776 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
+
+Using generated security password: 2cca0ee4-1c1e-40d2-9c33-239a52dd4ad1
+
+2023-11-16 12:51:19,838 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:51:19,839 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:51:19,839 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:51:19,839 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:51:19,873 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c453242, org.springframework.security.web.context.SecurityContextPersistenceFilter@370bc815, org.springframework.security.web.header.HeaderWriterFilter@aca756e, org.springframework.security.web.authentication.logout.LogoutFilter@1a2f70ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@651cb8b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a082e85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5eaff852, org.springframework.security.web.session.SessionManagementFilter@4baa708c, org.springframework.security.web.access.ExceptionTranslationFilter@4cfa9626, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c9a5b7c]
+2023-11-16 12:51:20,007 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:51:20,289 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:51:20,328 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:51:20,341 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.715 seconds (JVM running for 4.192)
+2023-11-16 12:51:21,191 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:51:21,191 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:51:21,194 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 2 ms
+2023-11-16 12:53:00,821 [restartedMain]  INFO [com.assembble.gc.GcApplication:55] Starting GcApplication using Java 1.8.0_202 on DESKTOP-R6OMO2A with PID 30564 (C:\Users\¿Ã¡§»£\Documents\project\gc\build\classes\java\main started by leejeongho in C:\Users\¿Ã¡§»£\Documents\project\gc)
+2023-11-16 12:53:00,824 [restartedMain]  INFO [com.assembble.gc.GcApplication:660] No active profile set, falling back to default profiles: default
+2023-11-16 12:53:00,871 [restartedMain]  INFO [org.springframework.boot.devtools.restart.ChangeableUrls:255] The Class-Path manifest attribute in C:\Users\¿Ã¡§»£\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/%ec%9d%b4%ec%a0%95%ed%98%b8/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2023-11-16 12:53:00,872 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-16 12:53:00,872 [restartedMain]  INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-16 12:53:02,657 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2023-11-16 12:53:02,667 [restartedMain]  INFO [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2023-11-16 12:53:02,668 [restartedMain]  INFO [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-11-16 12:53:02,755 [restartedMain]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2023-11-16 12:53:02,756 [restartedMain]  INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289] Root WebApplicationContext: initialization completed in 1883 ms
+2023-11-16 12:53:03,360 [restartedMain]  INFO [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86] 
+
+Using generated security password: 0ca3a75b-4715-4839-b0e2-824652d57f92
+
+2023-11-16 12:53:03,427 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/css/**'] with []
+2023-11-16 12:53:03,428 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/vendor/**'] with []
+2023-11-16 12:53:03,428 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/js/**'] with []
+2023-11-16 12:53:03,428 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure Ant [pattern='/images/**'] with []
+2023-11-16 12:53:03,468 [restartedMain]  INFO [org.springframework.security.web.DefaultSecurityFilterChain:51] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c453242, org.springframework.security.web.context.SecurityContextPersistenceFilter@370bc815, org.springframework.security.web.header.HeaderWriterFilter@72215585, org.springframework.security.web.authentication.logout.LogoutFilter@1a2f70ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@651cb8b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a082e85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5eaff852, org.springframework.security.web.session.SessionManagementFilter@789bc50, org.springframework.security.web.access.ExceptionTranslationFilter@60f0b657, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c9a5b7c]
+2023-11-16 12:53:03,588 [restartedMain]  INFO [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-16 12:53:03,829 [restartedMain]  INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2023-11-16 12:53:03,862 [restartedMain]  INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-16 12:53:03,871 [restartedMain]  INFO [com.assembble.gc.GcApplication:61] Started GcApplication in 3.474 seconds (JVM running for 3.93)
+2023-11-16 12:53:04,587 [http-nio-8080-exec-1]  INFO [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-16 12:53:04,588 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2023-11-16 12:53:04,589 [http-nio-8080-exec-1]  INFO [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
