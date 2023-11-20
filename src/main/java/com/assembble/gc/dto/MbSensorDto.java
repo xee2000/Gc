@@ -53,4 +53,5 @@ public class MbSensorDto
     private Float acc_y_fft3;
     private Float acc_z_fft3;
     private Float temperature3;
+    private String alarm;
 }

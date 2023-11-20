@@ -38,7 +38,7 @@ public class CesiumController {
      }else{
          model.addAttribute("map", map);
      }
-        return "cesium";
+        return "main";
     }
 
 
