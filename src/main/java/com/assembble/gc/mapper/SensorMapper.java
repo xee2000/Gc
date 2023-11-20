@@ -13,5 +13,5 @@ public interface SensorMapper {
 
     List<Map<String,Object>> getErmList();
 
-   MbSensorDto getMbeventList();
+   List<MbSensorDto> getMbeventList();
 }

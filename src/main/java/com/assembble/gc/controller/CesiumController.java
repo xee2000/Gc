@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -30,7 +31,8 @@ public class CesiumController {
         * */
     @GetMapping("/main")
     public String home(Model model){
-        MbSensorDto sensor = sensorMapper.getMbeventList();
+        List<MbSensorDto> sensor = sensorMapper.getMbeventList();
+        System.out.println("값 확인 :" + sensor);
         Map<String,Object> map = new HashMap<>();
         map.put("map",sensor);
         if(map == null || map.isEmpty()){

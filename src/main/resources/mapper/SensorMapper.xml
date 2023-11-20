@@ -14,11 +14,35 @@
     </select>
 
     <select id="getMbeventList" resultType="MbSensorDto">
-        SELECT device_number,
-        CASE WHEN measure_time IS NOT NULL THEN "danger" ELSE NULL END AS alarm
-        FROM rrps.mb_event
-        WHERE DATE(update_time) = CURDATE()
-        ORDER BY update_time DESC
-        LIMIT 1
+        SELECT
+        device_number,
+        MAX(measure_time) AS measure_time,
+        MAX(acc_x_peak1) AS acc_x_peak1,
+        MAX(acc_y_peak1) AS acc_y_peak1,
+        MAX(acc_z_peak1) AS acc_z_peak1,
+        CONCAT(
+        CASE
+        WHEN MAX(diff_x) <![CDATA[ > ]]> 0.1 OR MAX(diff_y)  <![CDATA[ > ]]>  0.1 OR MAX(diff_z) <![CDATA[ > ]]> 0.1
+        THEN 'Danger'
+        ELSE 'Safe'
+        END
+        ) AS alarm
+        FROM (
+        SELECT
+        device_number,
+        measure_time,
+        acc_x_peak1,
+        acc_y_peak1,
+        acc_z_peak1,
+        ABS(acc_x_peak1 - LAG(acc_x_peak1) OVER (PARTITION BY device_number ORDER BY measure_time)) AS diff_x,
+        ABS(acc_y_peak1 - LAG(acc_y_peak1) OVER (PARTITION BY device_number ORDER BY measure_time)) AS diff_y,
+        ABS(acc_z_peak1 - LAG(acc_z_peak1) OVER (PARTITION BY device_number ORDER BY measure_time)) AS diff_z
+        FROM
+        rrps.mb_event
+        ) AS subquery
+        GROUP BY
+        device_number
+        ORDER BY
+        device_number
     </select>
 </mapper>
