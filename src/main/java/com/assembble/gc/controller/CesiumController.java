@@ -36,7 +36,7 @@ public class CesiumController {
         if(map == null || map.isEmpty()){
          model.addAttribute("map",null);
      }else{
-         model.addAttribute("map", sensor);
+         model.addAttribute("map", map);
      }
         return "cesium";
     }
