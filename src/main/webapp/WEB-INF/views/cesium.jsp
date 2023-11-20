@@ -176,7 +176,7 @@
     );
 
 
-   // 지도에 도형 추가하기
+   // 지도에 도형 추가하기sssss
       // var box = viewer.entities.add({
       //   name:'Box',
       //   position : Cesium.Cartesian3.fromDegrees(127.33522174533093, 36.32988468774212, 200),
