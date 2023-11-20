@@ -1,0 +1,83 @@
+body{
+    background-image: linear-gradient(to bottom, #1C2146, black);
+}
+
+.allDiv{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+#cesiumContainer{
+    clear: both;
+    width:70%;
+    height:600px;
+    margin: 10px 20px;
+    z-index: 1;
+}
+
+.mapLine{
+    position: absolute;
+    width: 63%;
+    z-index: 1;
+    margin: 5px 10px;
+    height:620px;
+}
+
+.realTimeFind{
+    width:300px;
+    height:600px;
+    background-color: rgb(black, 0.1);
+    float:left;
+}
+
+.selectMap{
+    width:40%;
+    height:600px;
+    background-color: rgb(black, 0.1);
+}
+
+.middleDiv{
+    position: relative;
+    float:left;
+    display: flex;
+    width: 80%;
+}
+.colorWhite{
+    color: white;
+}
+
+.btn{
+    background-color: rgb(0, 0, 97);
+    color : white;
+}
+.input_realTime{
+    width: 225px;
+}
+.search_group, .alertGroup{
+    margin:20px auto;
+    text-align: center;
+}
+
+.form-select{
+    width: 180px;
+    display: inline;
+}
+.btn-primary{
+    border-radius: 100%;
+    border: none;
+    height: 70px;
+    width: 70px;
+
+}
+.red{
+    background-image: linear-gradient(to bottom, #ff552a, #ffb44a);
+}
+.buttonInline{
+    display: inline-table;
+    width: 150px;
+}
+.w100{
+    width:100%;
+    margin-left:5px;
+}
