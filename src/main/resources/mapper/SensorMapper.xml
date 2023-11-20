@@ -12,4 +12,8 @@
     <select id="getErmList" resultType="ErmInfoEventDto">
         SELECT * FROM erm_info_event
     </select>
+
+    <select id="getMbeventList" resultType="MbSensorDto">
+        SELECT device_number, measure_time FROM rrps.mb_event WHERE DATE(update_time) = CURDATE() ORDER BY update_time DESC LIMIT 1
+    </select>
 </mapper>

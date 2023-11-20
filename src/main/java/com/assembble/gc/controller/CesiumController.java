@@ -24,10 +24,17 @@ public class CesiumController {
         @Autowired
         private JwtService jwtService;
 
+        /*
+        * 23.1120 이정호 이상치 있는 당일날짜의 경우 한개만 출력하여서 존재시 sensor출력 아닐경우 null출력
+        * */
     @GetMapping("/main")
     public String home(Model model){
-
-
+     Map<String,Object> sensor = (Map<String, Object>) sensorMapper.getMbeventList();
+     if(sensor == null || sensor.isEmpty()){
+         model.addAttribute("map",null);
+     }else{
+         model.addAttribute("map", sensor);
+     }
         return "cesium";
     }
 

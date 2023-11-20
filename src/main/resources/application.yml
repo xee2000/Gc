@@ -6,7 +6,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://220.123.184.52:3306/gc?autoReconnect=true&useSSL=false
+    url: jdbc:mariadb://220.123.184.52:3306/rrps?autoReconnect=true&useSSL=false
     username: root
     password: iot.admin
   servlet:

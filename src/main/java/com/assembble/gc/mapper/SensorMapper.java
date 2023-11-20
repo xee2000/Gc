@@ -1,7 +1,6 @@
 package com.assembble.gc.mapper;
 
-import com.assembble.gc.dto.ErmInfoEventDto;
-import com.assembble.gc.dto.TripleControlDto;
+import com.assembble.gc.dto.MbSensorDto;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -13,4 +12,6 @@ public interface SensorMapper {
     Map<String,Object> getTripleList();
 
     List<Map<String,Object>> getErmList();
+
+   List<Map<String,Object>> getMbeventList();
 }
