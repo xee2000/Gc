@@ -1,7 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    <c:set var="sensor" value="${map.map}" />
+                     <c:out value="device_num: ${sensor.device_number}" /><br/>
+                     <c:out value="measure_time: ${sensor.alarm}" /><br/>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
 
@@ -104,7 +109,7 @@
         </div>
    <div class="middleDiv">
         <!-- 세슘 시작 구간 -->
-      <img src="image/세슘틀.png" class="mapLine">
+      <img src="/image/세슘틀.png" class="mapLine">
   <div id="cesiumContainer">
   <script>
     // 세슘 토큰 아이디 입력
@@ -159,8 +164,9 @@
       ]
     },
   });
+
 }
-    alert(JSON.stringify(buildingsTileset.style))
+
     viewer.camera.flyTo({
     //위도, 경도, 높이, 방향 설정하기, 사용자에게 위치 (위도, 경도 값 받아올 수 있도록 할 수 있음)
       destination: Cesium.Cartesian3.fromDegrees(127.38724, 36.34845, 2000),
