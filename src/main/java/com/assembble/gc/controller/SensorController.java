@@ -39,6 +39,8 @@ public class SensorController {
         return "home";
     }
 
+
+
     @GetMapping("/list")
     @Cacheable
     public ResponseEntity main(
