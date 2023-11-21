@@ -29,8 +29,15 @@ public class CesiumController {
         /*
         * 23.1120 이정호 이상치 있는 당일날짜의 경우 한개만 출력하여서 존재시 sensor출력 아닐경우 null출력
         * */
+
     @GetMapping("/main")
-    public String home(Model model){
+    public String home(){
+
+        return "cesium";
+    }
+
+    @GetMapping("/getAnomaly")
+    public String menubar(Model model){
         List<MbSensorDto> sensor = sensorMapper.getMbeventList();
         System.out.println("값 확인 :" + sensor);
         Map<String,Object> map = new HashMap<>();
@@ -42,21 +49,6 @@ public class CesiumController {
      }
         return "cesium";
     }
-
-    @GetMapping("/menu")
-    public String menu(Model model){
-        List<MbSensorDto> sensor = sensorMapper.getMbeventList();
-        System.out.println("값 확인 :" + sensor);
-        Map<String,Object> map = new HashMap<>();
-        map.put("map",sensor);
-        if(map == null || map.isEmpty()){
-            model.addAttribute("map",null);
-        }else{
-            model.addAttribute("map", map);
-        }
-        return "cesium";
-    }
-
 
 
 
