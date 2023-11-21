@@ -74,40 +74,50 @@
          <div class="realTimeList">
           <ol class="list-group list-group-numbered">
             <script>
-                window.onload=function(){
-                  const listVar = document.getElementsByClassName("list-group-numbered");
+                   // setInterval(reload, 5000);
+                    function reload(){
+                           $.ajax({
+                             type: "GET",
+                             async: false,
+                             url: "${contextPath}/cesium/getAnomaly",
+                             dataType: "text",
+                             success: function (result) {
+                                 $("#realList").load(window.location.href + "#realList");
+                             },
+                             error: function( error){
+
+                             }
+                           });
+                           }
+
+                   window.onload=function(){
                   for (var i = 1; i <= eventCount; i++) {
                     $(".list-group-numbered").append("<li class='list-group-item d-flex justify-content-between align-items-start w100'>"
                       + "<div class='ms-2 me-auto'> <div class='fw-bold'>"
-                      +  testData[i].id
+                      +  "dd"
                       + " </div> <a href='javascript:findPlace("
                       + testData[i].latitude
                       + ","
                       + testData[i].longitude
                       +")'>"
-                      +  testData[i].where
+                      +  "Ddd"
                       + " 알림 표시 </a></div>"
                       + "<span class='badge bg-primary rounded-pill'>1</span> </li>");
                   }
                 }
                 function findPlace(lati, longi){
-
                   viewer.camera.flyTo({
                         //위도, 경도, 높이, 방향 설정하기, 사용자에게 위치 (위도, 경도 값 받아올 수 있도록 할 수 있음)
-                          destination: Cesium.Cartesian3.fromDegrees(lati, longi, 2000),
+                          destination: Cesium.Cartesian3.fromDegrees(longi, lati, 2000),
                           orientation: {
                             heading: Cesium.Math.toRadians(0.0),
                             pitch: Cesium.Math.toRadians(-15.0),
                           }
                     });
                 }
-
           </script>
           </ol>
          </div>
-
-
-
         </div>
    <div class="middleDiv">
         <!-- 세슘 시작 구간 -->
@@ -128,10 +138,10 @@
 
   //값 상태에 따라 건물 색깔 변경하기
   if(true){
-    alert("디바이스 번호 : ${sensor.device_number} 측정시간 : ${sensor.measure_time} 현재시간 : ${now}");
+    alert("디바이스 번호 : ${sensor} 측정시간 : 현재시간 : ${now}");
     let errString = [];
     testData = [
-                      {latitude : 36.37528, longitude : 127.3894, condition :"bad", where : "전기과부하", device_number :"${sensor.device_number}", measure_time : "${sensor.measure_time}" },
+                      {latitude : 36.37528, longitude : 127.3894, condition :"bad", where : "전기과부하" },
                       {latitude : 36.38473, longitude : 127.39887,  condition :"good",where : "습도 이상"},
                       {latitude : 36.37618, longitude : 127.39736,  condition : "middle", where : "전기과부하"},
                       {latitude : 36.37618, longitude : 127.39736, condition : "bad", where : "전기과부하"},
@@ -139,8 +149,6 @@
                     ];
 
     testData.forEach(function(element, index){
-
-
                     if(element.condition=="bad"){
                       let arrString = ["${latitude}===" + element.latitude +" && ${longitude}===" + element.longitude ,"color('red')"];
                       errString.push(arrString);
@@ -236,8 +244,8 @@ function updateNameOverlay(pickedFeature, position) {
   }
   // A feature was picked, so show its overlay content
   nameOverlay.style.display = "block";
-  nameOverlay.style.bottom = '${ viewer.canvas.clientHeight  - position.y}px';
-  nameOverlay.style.left = '${position.x+200}px';
+  nameOverlay.style.bottom = ${viewer.canvas.clientHeight  - position.y}+'px';
+  nameOverlay.style.left = ${position.x+200} + 'px';
 
   const name = pickedFeature.getProperty("name");
   nameOverlay.textContent = name;
@@ -428,5 +436,3 @@ if (
 <div id="chartHolder" style="width:800px; height:450px;"><div>
 </body>
 </html>
-
-
