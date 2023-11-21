@@ -2,6 +2,7 @@ package com.assembble.gc.dto;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 //메인보드 센서
@@ -13,7 +14,9 @@ public class MbSensorDto
     
     private Integer device_number;
     //측정시간
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date measure_time;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date update_time;
     //신호세기
     private Integer rssi;
