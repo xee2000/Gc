@@ -37,7 +37,7 @@ public class CesiumController {
     }
 
     @GetMapping("/getAnomaly")
-    public String menubar(Model model){
+    public void menubar(Model model){
         List<MbSensorDto> sensor = sensorMapper.getMbeventList();
         System.out.println("값 확인 :" + sensor);
         Map<String,Object> map = new HashMap<>();
@@ -47,7 +47,6 @@ public class CesiumController {
      }else{
          model.addAttribute("map", map);
      }
-        return "cesium";
     }
 
 
