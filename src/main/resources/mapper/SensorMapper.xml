@@ -16,11 +16,10 @@
     <select id="getMbeventList" resultType="MbSensorDto">
         SELECT
         s.device_number,
-        MAX(s.measure_time) AS sensor_measure_time,
-        MAX(e.measure_time) AS event_measure_time,
+        MAX(e.update_time) AS update_time,
         CASE
-        WHEN MAX(e.measure_time) = NOW() THEN 'Danger'
-        ELSE 'Safe'
+        WHEN MAX(e.update_time) = NOW() THEN 'Danger'
+        ELSE MAX(e.update_time)
         END AS alarm
         FROM
         rrps.mb_sensor s

@@ -43,6 +43,22 @@ public class CesiumController {
         return "cesium";
     }
 
+    @GetMapping("/menu")
+    public String menu(Model model){
+        List<MbSensorDto> sensor = sensorMapper.getMbeventList();
+        System.out.println("값 확인 :" + sensor);
+        Map<String,Object> map = new HashMap<>();
+        map.put("map",sensor);
+        if(map == null || map.isEmpty()){
+            model.addAttribute("map",null);
+        }else{
+            model.addAttribute("map", map);
+        }
+        return "cesium";
+    }
+
+
+
 
 
 }
