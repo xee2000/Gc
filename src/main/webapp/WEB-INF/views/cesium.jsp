@@ -3,22 +3,20 @@
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
            <c:set var="sensor" value="${map.map}" />
            <c:set var="now" value="<%=new java.util.Date()%>" />
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.79.1/Build/Cesium/Cesium.js"></script>
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.79.1/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
- <link rel="stylesheet" href="/css/cesium.css">
+  <link rel="stylesheet" href="/css/cesium.css">
   <script>
     let eventCount=0;
     let testData;
     let alarmData = "${sensor[0].alarm}"
+     alert("센서 측정 시간 :: " + alarmData + "\n알람 발생 시간" + "${now}");
     let sensorData = "${sensor}"
   </script>
   </head>
@@ -85,6 +83,7 @@
                              data :  {alarm : alarmData},
                              dataType: "json",
                              success: function (result) {
+                             alert("??")
                                 if(result!=null){
                                     alert(result);
                                     sensorData = result;
@@ -133,7 +132,6 @@
   <script>
     // 세슘 토큰 아이디 입력
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhOTljMjZiNS1jNDZhLTRlNjAtODY1Ni02NGU4NDI0MDdhNDciLCJpZCI6MTc0MDI2LCJpYXQiOjE2OTgzMDQzODh9.LaGjgFhLrmhIvs2x40b6OY7V8WlqiVmAlKwvqCcM3bA';
-
 
     const viewer = new Cesium.Viewer('cesiumContainer', {
       terrainProvider: Cesium.createWorldTerrain()
