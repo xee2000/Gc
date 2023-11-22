@@ -16,7 +16,7 @@
     <select id="getMbeventList" resultType="MbSensorDto">
         SELECT
         s.device_number,
-        date_format(max(s.measure_time),'%Y-%m-%d-%T') AS measure_time,
+        date_format(max(e.measure_time),'%Y-%m-%d-%T') AS measure_time,
         date_format(MAX(e.update_time),'%Y-%m-%d-%T') AS update_time,
         CASE
         WHEN date_format(MAX(e.update_time),'%m-%d %l%i') = date_format(now(),'%m-%d %l%i') THEN 'Danger'
