@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
 import java.util.List;
@@ -44,22 +45,27 @@ public class CesiumController {
         return "cesium";
     }
 
+
+
     @GetMapping("/getAnomaly")
-    public Model menubar(String alarm,  Model mav){
+    public @ResponseBody Model menubar(String alarm,  Model mav){
         System.out.println(alarm);
+
         List<MbSensorDto> sensor1 = sensorMapper.getMbeventList();
+        Map<String,Object> map1 = new HashMap<>();
+        map1.put("map",sensor1);
         System.out.println("1번  :: " + sensor1);
         for(MbSensorDto sensorData : sensor1){
             if(!sensorData.getAlarm().equals(alarm)){
                 System.out.println("2번 ::  if문까지 완료");
-                if(alarm.equals("Danger")){
+                if(sensorData.getAlarm().equals("Danger")){
                     System.out.println("3번 ::  if문 danger까지 완료");
-                mav.addAttribute("map", sensor1);
+                    mav.addAttribute("map", map1);
+                    return mav;
                 }
-                return mav;
             }
         }
-        return null;
+        return mav;
     }
 
 
