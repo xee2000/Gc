@@ -31,22 +31,35 @@ public class CesiumController {
         * */
 
     @GetMapping("/main")
-    public String home(){
-
-        return "cesium";
-    }
-
-    @GetMapping("/getAnomaly")
-    public void menubar(Model model){
+    public String home(Model model){
         List<MbSensorDto> sensor = sensorMapper.getMbeventList();
         System.out.println("값 확인 :" + sensor);
         Map<String,Object> map = new HashMap<>();
         map.put("map",sensor);
         if(map == null || map.isEmpty()){
-         model.addAttribute("map",null);
-     }else{
-         model.addAttribute("map", map);
-     }
+            model.addAttribute("map",null);
+        }else{
+            model.addAttribute("map", map);
+        }
+        return "cesium";
+    }
+
+    @GetMapping("/getAnomaly")
+    public Model menubar(String alarm,  Model mav){
+        System.out.println(alarm);
+        List<MbSensorDto> sensor1 = sensorMapper.getMbeventList();
+        System.out.println("1번  :: " + sensor1);
+        for(MbSensorDto sensorData : sensor1){
+            if(!sensorData.getAlarm().equals(alarm)){
+                System.out.println("2번 ::  if문까지 완료");
+                if(alarm.equals("Danger")){
+                    System.out.println("3번 ::  if문 danger까지 완료");
+                mav.addAttribute("map", sensor1);
+                }
+                return mav;
+            }
+        }
+        return null;
     }
 
 

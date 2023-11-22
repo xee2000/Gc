@@ -18,6 +18,8 @@
   <script>
     let eventCount=0;
     let testData;
+    let alarmData = "${sensor[0].alarm}"
+    let sensorData = "${sensor}"
   </script>
   </head>
 <body>
@@ -74,15 +76,20 @@
          <div class="realTimeList">
           <ol class="list-group list-group-numbered">
             <script>
-                   // setInterval(reload, 5000);
+                   setInterval(reload, 5000);
                     function reload(){
                            $.ajax({
                              type: "GET",
                              async: false,
                              url: "${contextPath}/cesium/getAnomaly",
-                             dataType: "text",
+                             data :  {alarm : alarmData},
+                             dataType: "json",
                              success: function (result) {
+                                if(result!=null){
+                                    alert(result);
+                                    sensorData = result;
                                  $("#realList").load(window.location.href + "#realList");
+                                }
                              },
                              error: function( error){
 
@@ -91,17 +98,17 @@
                            }
 
                    window.onload=function(){
-                  for (var i = 1; i <= eventCount; i++) {
+                  for (var i = 0; i <= eventCount; i++) {
                     $(".list-group-numbered").append("<li class='list-group-item d-flex justify-content-between align-items-start w100'>"
                       + "<div class='ms-2 me-auto'> <div class='fw-bold'>"
-                      +  "dd"
+                      +  "기기 번호 : ${sensor[0].device_number}"
                       + " </div> <a href='javascript:findPlace("
                       + testData[i].latitude
                       + ","
                       + testData[i].longitude
                       +")'>"
-                      +  "Ddd"
-                      + " 알림 표시 </a></div>"
+                      +  "${sensor[0].alarm} <br>"
+                      + " 이상치 발생 </a></div>"
                       + "<span class='badge bg-primary rounded-pill'>1</span> </li>");
                   }
                 }
@@ -138,7 +145,7 @@
 
   //값 상태에 따라 건물 색깔 변경하기
   if(true){
-    alert("디바이스 번호 : ${sensor} 측정시간 : 현재시간 : ${now}");
+    //alert("디바이스 번호 : ${sensor} 측정시간 : 현재시간 : ${now}");
     let errString = [];
     testData = [
                       {latitude : 36.37528, longitude : 127.3894, condition :"bad", where : "전기과부하" },

@@ -19,7 +19,7 @@
         MAX(e.update_time) AS update_time,
         CASE
         WHEN MAX(e.update_time) = NOW() THEN 'Danger'
-        ELSE MAX(e.update_time)
+        ELSE 'Safe'
         END AS alarm
         FROM
         rrps.mb_sensor s
