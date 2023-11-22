@@ -6,11 +6,12 @@ import com.assembble.gc.mapper.SensorMapper;
 import com.assembble.gc.service.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
 import java.util.List;
@@ -48,9 +49,9 @@ public class CesiumController {
 
 
     @GetMapping("/getAnomaly")
-    public @ResponseBody Model menubar(String alarm,  Model mav){
+    public ResponseEntity menubar(String alarm, Model mav){
         System.out.println(alarm);
-
+                    ResponseEntity resEntity = null;
         List<MbSensorDto> sensor1 = sensorMapper.getMbeventList();
         Map<String,Object> map1 = new HashMap<>();
         map1.put("map",sensor1);
@@ -60,12 +61,12 @@ public class CesiumController {
                 System.out.println("2번 ::  if문까지 완료");
                 if(sensorData.getAlarm().equals("Danger")){
                     System.out.println("3번 ::  if문 danger까지 완료");
-                    mav.addAttribute("map", map1);
-                    return mav;
+                    resEntity =new ResponseEntity(map1, HttpStatus.OK);
+                    return resEntity;
                 }
             }
         }
-        return mav;
+        return null;
     }
 
 

@@ -16,7 +16,6 @@
     let eventCount=0;
     let testData;
     let alarmData = "${sensor[0].alarm}"
-     alert("센서 측정 시간 :: " + alarmData + "\n알람 발생 시간" + "${now}");
     let sensorData = "${sensor}"
   </script>
   </head>
@@ -74,7 +73,7 @@
          <div class="realTimeList">
           <ol class="list-group list-group-numbered">
             <script>
-                   setInterval(reload, 5000);
+                   setInterval(reload, 700);
                     function reload(){
                            $.ajax({
                              type: "GET",
@@ -83,9 +82,8 @@
                              data :  {alarm : alarmData},
                              dataType: "json",
                              success: function (result) {
-                             alert("??")
                                 if(result!=null){
-                                    alert(result);
+                                    console.log("측정시간 :: " + result.map[0].update_time + "\n현재시간 :: ${now}")
                                     sensorData = result;
                                  $("#realList").load(window.location.href + "#realList");
                                 }
@@ -97,7 +95,7 @@
                            }
 
                    window.onload=function(){
-                  for (var i = 0; i <= eventCount; i++) {
+                  for (var i = 2; i <= eventCount; i++) {
                     $(".list-group-numbered").append("<li class='list-group-item d-flex justify-content-between align-items-start w100'>"
                       + "<div class='ms-2 me-auto'> <div class='fw-bold'>"
                       +  "기기 번호 : ${sensor[0].device_number}"
@@ -249,8 +247,8 @@ function updateNameOverlay(pickedFeature, position) {
   }
   // A feature was picked, so show its overlay content
   nameOverlay.style.display = "block";
-  nameOverlay.style.bottom = ${viewer.canvas.clientHeight  - position.y}+'px';
-  nameOverlay.style.left = ${position.x+200} + 'px';
+  nameOverlay.style.bottom = viewer.canvas.clientHeight  - position.y+'px';
+  nameOverlay.style.left = position.x + 'px';
 
   const name = pickedFeature.getProperty("name");
   nameOverlay.textContent = name;
