@@ -33,6 +33,8 @@ dependencies {
 	implementation("org.apache.tomcat.embed:tomcat-embed-jasper")
 	implementation("org.glassfish.jaxb:jaxb-runtime:2.3.2")
 	implementation("javax.servlet:jstl:1.2")
+	implementation("com.google.code.gson:gson:2.10.1")
+	implementation("com.googlecode.json-simple:json-simple:1.1.1")
 
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")

@@ -19,9 +19,9 @@
         date_format(max(e.measure_time),'%Y-%m-%d-%T') AS measure_time,
         date_format(MAX(e.update_time),'%Y-%m-%d-%T') AS update_time,
         CASE
-        WHEN date_format(MAX(e.update_time),'%m-%d %T%') = date_format(now(),'%m-%d %l%T') THEN 'Danger'
+        WHEN date_format(MAX(e.update_time),'%m-%d %T%') = date_format(now(),'%m-%d %T') THEN 'Danger'
         ELSE 'Safe'
-        END AS alarm
+        END AS alarm, curtime() AS time
         FROM
         rrps.mb_sensor s
         LEFT JOIN rrps.mb_event e ON s.device_number = e.device_number
@@ -30,4 +30,27 @@
         ORDER BY
         s.device_number
     </select>
+
+    <select id="getsensorInfo" resultType="map">
+        SELECT device_number,
+        date_format(measure_time,'%Y-%m-%d-%T') AS measure_time,
+        temperature1,
+        temperature2,
+        temperature3
+        FROM rrps.mb_sensor
+        WHERE device_number = #{device_number} AND
+        measure_time = #{measure_time}
+    </select>
+
+    <select id="mbEventchartInfo" resultType="MbSensorDto">
+        SELECT device_number,
+        measure_time,
+        temperature1,
+        temperature2,
+        temperature3
+        FROM rrps.mb_sensor
+        WHERE device_number = #{device_number}
+        ORDER BY measure_time
+    </select>
+
 </mapper>
