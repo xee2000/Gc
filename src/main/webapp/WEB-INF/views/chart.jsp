@@ -6,44 +6,30 @@
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', '측정시간');
-            data.addColumn('number', '온도1');
-            data.addColumn('number', '온도2');
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
 
-    <c:forEach var="sensor" items="${charList}">
-        console.log('Adding row:',${sensor.temperature2});
-        data.addRow(['${sensor.measure_time}', ${sensor.temperature1}, ${sensor.temperature2}]);
-    </c:forEach>
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
 
-            var materialOptions = {
-                chart: {
-                    title: '디바이스1'
-                },
-                width: 900,
-                height: 500,
-                series: {
-                    0: {axis: 'Temps'},
-                    1: {axis: 'Daylight'}
-                },
-                axes: {
-                    y: {
-                        Temps: {label: 'Temps (Celsius)'},
-                        Daylight: {label: 'Daylight'}
-                    }
-                }
-            };
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-            chart.draw(data, materialOptions);
-        }
+        chart.draw(data, options);
+      }
     </script>
-</head>
-
+  </head>
   <body>
     <div id="curve_chart" style="width: 900px; height: 500px"></div>
   </body>
