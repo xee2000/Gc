@@ -73,8 +73,8 @@
          <div class="realTimeList">
           <ol class="list-group list-group-numbered">
             <script>
-                   setInterval(reload, 700);
-                    function reload(){
+                   setInterval(reload, 100, alarmData);
+                    function reload(alarmData){
                            $.ajax({
                              type: "GET",
                              async: false,
@@ -84,7 +84,7 @@
                              success: function (result) {
                                 if(result!=null){
                                     console.log("측정시간 :: " + result.map[0].update_time + "\n현재시간 :: ${now}")
-                                    sensorData = result;
+                                    alarmData = result.map[0].alarm;
                                  $("#realList").load(window.location.href + "#realList");
                                 }
                              },
