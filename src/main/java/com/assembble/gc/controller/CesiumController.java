@@ -73,7 +73,7 @@ public class CesiumController {
 
 
 
-    @GetMapping("/get/Anomaly")
+    @GetMapping("/getAnomaly")
     public ResponseEntity menubar(String alarm, Model mav) {
         System.out.println(alarm);
         List<MbSensorDto> sensor1 = sensorMapper.getMbeventList();

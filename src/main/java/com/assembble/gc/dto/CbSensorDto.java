@@ -30,6 +30,7 @@ public class CbSensorDto
     private int overcurrent_alarm;
     private int igo_alarm;
     private int igr_alarm;
-    
+    private Date time;
+
 
 }

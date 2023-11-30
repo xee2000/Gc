@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" isELIgnored="false" %>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-           <c:set var="sensor" value="${map.map}" />
-           <c:set var="now" value="<%=new java.util.Date()%>" />
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="sensor" value="${map.map}" />
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -12,11 +11,13 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/cesium.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script>
     let eventCount=0;
     let testData;
-    let alarmData = "${sensor[0].alarm}"
-    let sensorData = "${sensor}"
+    let alarmData = "${sensor[0].alarm}";
+    let sensorData = "${sensor}";
+
   </script>
   </head>
 <body>
@@ -73,29 +74,46 @@
          <div class="realTimeList">
           <ol class="list-group list-group-numbered">
             <script>
-                   setInterval(reload, 100, alarmData);
+                  setInterval(reload, 0, alarmData);
                     function reload(alarmData){
-                           $.ajax({
-                             type: "GET",
-                             async: false,
-                             url: "${contextPath}/cesium/getAnomaly",
-                             data :  {alarm : alarmData},
-                             dataType: "json",
-                             success: function (result) {
-                                if(result!=null){
-                                    console.log("측정시간 :: " + result.map[0].update_time + "\n현재시간 :: ${now}")
-                                    alarmData = result.map[0].alarm;
-                                 $("#realList").load(window.location.href + "#realList");
-                                }
-                             },
-                             error: function( error){
+                    const date = new Date()
+                        const hours = date.getHours();
+                        const times = date.getTime();
+                        const minutes = date.getMinutes();
+                        const seconds = date.getSeconds();
+                        const milliseconds= date.getMilliseconds();
 
-                             }
-                           });
+                            console.log("서버요청 시간: " + hours + "시 " + minutes + "분 " + seconds + "초" + milliseconds + "ms");
+                             $.ajax({
+                                    type: "GET",
+                                    async: false,
+                                    url: "${contextPath}/cesium/getAnomaly",
+                                    data :  {alarm : alarmData},
+                                    dataType: "json",
+                                    success: function (result) {
+                                    if(result!=null){
+                                   // console.log("측정시간 :: " + result.map[0].update_time);
+                                    alarmData = result.map[0].alarm;
+                                    const randomNumber = Math.floor(Math.random() * 800);
+                                    // $("#realList").load(window.location.href + "#realList");.
+                                    //console.log("서버응답 시간: " + hours + "시 " + minutes + "분 " + seconds + "초" + (milliseconds+randomNumber) + "ms");
+                                    const date1 = new Date();
+                                    swal({
+                                      title: "화재 이상치 탐지",
+                                      text: "위 주소에서 화재 이상치가 탐지되었습니다\n 발생 시간 : " + date1 ,
+                                      icon: "warning",
+                                      buttons: true,
+                                      dangerMode: true,
+                                    });
+                                    }
+                                    },
+                                    error: function( error){
+                                    }
+                                });
                            }
 
                    window.onload=function(){
-                  for (var i = 2; i <= eventCount; i++) {
+                  for (var i = 0; i <= eventCount; i++) {
                     $(".list-group-numbered").append("<li class='list-group-item d-flex justify-content-between align-items-start w100'>"
                       + "<div class='ms-2 me-auto'> <div class='fw-bold'>"
                       +  "기기 번호 : ${sensor[0].device_number}"
@@ -107,8 +125,9 @@
                       +  "${sensor[0].alarm} <br>"
                       + " 이상치 발생 </a></div>"
                       + "<span class='badge bg-primary rounded-pill'>1</span> </li>");
-                  }
-                }
+                        }
+
+
                 function findPlace(lati, longi){
                   viewer.camera.flyTo({
                         //위도, 경도, 높이, 방향 설정하기, 사용자에게 위치 (위도, 경도 값 받아올 수 있도록 할 수 있음)
@@ -118,6 +137,7 @@
                             pitch: Cesium.Math.toRadians(-15.0),
                           }
                     });
+                }
                 }
           </script>
           </ol>
@@ -141,7 +161,7 @@
 
   //값 상태에 따라 건물 색깔 변경하기
   if(true){
-    //alert("디바이스 번호 : ${sensor} 측정시간 : 현재시간 : ${now}");
+    //alert("디바이스 번호 : ${sensor} 측정시간 : 현재시간 : ");
     let errString = [];
     testData = [
                       {latitude : 36.37528, longitude : 127.3894, condition :"bad", where : "전기과부하" },
@@ -153,9 +173,10 @@
 
     testData.forEach(function(element, index){
                     if(element.condition=="bad"){
-                      let arrString = ["${latitude}===" + element.latitude +" && ${longitude}===" + element.longitude ,"color('red')"];
+                      let arrString = [" " ,"color('red')"];
                       errString.push(arrString);
-                      eventCount++;}
+                      eventCount++;
+                      }
                     // }else if(element.condition=="middle"){
                     //   let arrString =["${Latitude}===" + 127.39736 +" && ${Longitude}===" + 36.37618 ,"color('#FF7F50')"];;
                     //   errString.push(arrString);
@@ -419,7 +440,7 @@ if (
           </div>
             <div class="buttonInline">
             <button type="button" class="btn btn-primary position-relative red">
-               <span id="eventAlert"> ddd </span>
+               <span id="eventAlert"> 6 </span>
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 4
                 <span class="visually-hidden">이벤트 탐지 현황</span>
@@ -432,7 +453,7 @@ if (
       <script>
         //bad 이벤트 탐지 현황 출력
           const eventAlert = document.getElementById("eventAlert");
-          eventAlert.innerHTML=eventCount;
+         // eventAlert.innerHTML=eventCount;
       </script>
   </div>
 </div>
