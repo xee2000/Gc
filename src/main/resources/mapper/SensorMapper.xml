@@ -19,7 +19,7 @@
         date_format(max(e.measure_time),'%Y-%m-%d-%T') AS measure_time,
         date_format(MAX(e.update_time),'%Y-%m-%d-%T') AS update_time,
         CASE
-        WHEN date_format(MAX(e.update_time),'%m-%d %T%') = date_format(now(),'%m-%d %T') THEN 'Danger'
+        WHEN date_format(MAX(e.update_time),'%m-%d-%l-%i') = date_format(now(),'%m-%d-%l-%i') THEN 'Danger'
         ELSE 'Safe'
         END AS alarm, curtime() AS time
         FROM
@@ -28,7 +28,7 @@
         GROUP BY
         s.device_number
         ORDER BY
-        s.device_number
+        s.device_number;
     </select>
 
     <select id="getsensorInfo" resultType="map">
