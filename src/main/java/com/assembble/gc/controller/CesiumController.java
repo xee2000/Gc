@@ -5,10 +5,12 @@ import com.assembble.gc.dto.MbSensorDto;
 import com.assembble.gc.mapper.SensorMapper;
 import com.assembble.gc.service.JwtService;
 import com.assembble.gc.service.SensorService;
-import com.assembble.gc.util.TimeConverter;
+import com.google.gson.Gson;
+import com.google.gson.JsonIOException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -16,6 +18,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.*;
 
 @Controller
@@ -39,26 +43,16 @@ public class CesiumController {
 
     @GetMapping("/main")
     public String home(Model model){
+
         List<MbSensorDto> sensor = sensorMapper.getMbeventList();
         Map<String,Object> map = new HashMap<>();
         map.put("map",sensor);
         for(int i = 0; i<sensor.size(); i++){
-           Date time =  sensor.get(i).getTime();
-            long millis = time.getTime();
-            log.info(" millis 확인 : " + millis);
-            // 시분초 단위로 시간 문자열을 생성
-            String mstime = TimeConverter.toTimeString(millis);
 
-            // map에 timeString을 추가
-            map.put("time",mstime);
+           Date Uptime =  sensor.get(i).getUpdate_time();
+            log.info("센서데이터 확인 : " +Uptime);
 
-            // log에 timeString을 출력
-            log.info(" 초확인 : " + mstime);
-
-            // map에 timeString을 추가
         }
-
-        long afterTime = System.currentTimeMillis();
         log.info("센서데이터 확인 : " +sensor);
         
         if(map == null || map.isEmpty()){
@@ -120,15 +114,26 @@ public class CesiumController {
 
     }
 
-    //2023-11-29 이정호 미완성
     @GetMapping("chart")
+    public String chartpage(HttpServletResponse response, Model model) throws JsonIOException, IOException {
+
+        return "chart";
+    }
+
+
+
+    //2023-11-29 이정호 미완성
+    @GetMapping("getchart")
     @ResponseBody
-    public ModelAndView chartinfo(@RequestParam int device_number, ModelAndView mnv) {
+    public List<MbSensorDto> chartinfo(HttpServletResponse response, Model model) throws JsonIOException, IOException {
+        int device_number = 1;
+        List<MbSensorDto> chartList = sensorService.getChartList(device_number);
 
-        mnv.setViewName("chart");
-        mnv.addObject("charList",sensorService.getChartList(device_number));
-
-        return mnv;
+        if (!chartList.isEmpty() || chartList.size() != 0) {
+            return chartList; // Return the list directly
+        } else {
+            return null; // Return null if the list is empty
+        }
     }
 
 
